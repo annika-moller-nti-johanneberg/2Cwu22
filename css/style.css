@@ -1,0 +1,90 @@
+#index_container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-areas: 
+    'hd hd'
+    'nav nav'
+    'mn as'
+}
+
+#experiences_container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 4fr 4fr;
+    grid-template-areas: 
+    'hd hd'
+    'nav nav'
+    'dv dv'
+    'art1 art2'
+    'art3 art4'
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(10, 25, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(43, 43, 116);
+}
+
+main {
+    grid-area: mn;
+}
+
+aside {
+    grid-area: as;
+}
+
+div {
+    grid-area: dv;
+}
+
+.article1 {
+    grid-area: art1;
+}
+
+.article2 {
+    grid-area: art2;
+}
+
+.article3 {
+    grid-area: art3;
+}
+
+.article4 {
+    grid-area: art4;
+}
+
+#logo {
+    height: 2rem;
+    width: 7rem;
+}
+
+.nav_li {
+   display: inline-block;
+   color: white;
+}
+
+.nav_ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.color1 {
+    background-color: rgb(6, 40, 92);
+}
+
+.color2 {
+    background-color: rgb(58, 103, 177);
+}
