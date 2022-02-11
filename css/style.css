@@ -3,9 +3,8 @@
     height: 100vh;
     margin: 0;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 8fr;
+    grid-template-rows: 10% 1fr;
     grid-template-areas: 
-    'hd hd'
     'nav nav'
     'mn as'
 }
@@ -15,26 +14,41 @@
     height: 100vh;
     margin: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0.5fr 4fr 4fr;
+    grid-template-rows: 10% 0.5fr 2fr 2fr;
     grid-template-areas: 
-    'hd hd'
     'nav nav'
-    'dv dv'
+    'dv1 dv2'
     'art1 art2'
     'art3 art4'
 }
 
-header {
-    grid-area: hd;
-    background-color: rgb(10, 25, 47);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#projects_container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 1fr 1fr 1fr;
+    grid-template-areas: 
+    'nav'
+    'art1'
+    'art2'
+    'art3'
+}
+
+#about_me_container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 8fr;
+    grid-template-areas: 
+    'nav nav'
+    'as mn'
 }
 
 nav {
     grid-area: nav;
-    background-color: rgb(43, 43, 116);
+    background-color: rgb(10, 25, 47);
 }
 
 main {
@@ -65,26 +79,95 @@ div {
     grid-area: art4;
 }
 
+#div1 {
+    grid-area: dv1;
+}
+
+#div2 {
+    grid-area: dv2;
+}
+
 #logo {
     height: 2rem;
     width: 7rem;
+    margin-left: -37rem;
 }
 
 .nav_li {
-   display: inline-block;
-   color: white;
+   display: block;
+   color: pink;
+   padding: 1rem 3rem;
+   margin: 0;
 }
 
 .nav_ul {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: right;
+    margin: 0 2rem;
 }
 
 .color1 {
-    background-color: rgb(6, 40, 92);
+    background-color: rgb(10, 25, 47);
 }
 
 .color2 {
     background-color: rgb(58, 103, 177);
 }
+
+.font_type1 {
+    font-size: 5rem;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 6rem;
+    letter-spacing: -0.15rem;
+    color: rgb(228, 225, 225);
+}
+
+.font_type2 {
+    padding-left: 7rem;
+    margin-bottom: -3rem;
+    padding-top: 7rem;
+    color: pink;
+}
+
+.font_type3 {
+    margin: -2rem 6rem;
+    padding-right: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(156, 156, 156);
+}
+
+#table1 {
+    background-color:rgb(238, 139, 156); 
+    width:16rem;
+}
+
+#table2 {
+    background-color:rgb(170, 26, 98); 
+    width:10rem;
+}
+
+#table3 {
+    background-color:rgb(190, 52, 121); 
+    width:5rem;
+}
+
+#table4 {
+    background-color:rgb(221, 22, 122); 
+    width:22rem;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+th {
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
