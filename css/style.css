@@ -1,38 +1,47 @@
+:root {
+  --color1: rgb(10, 25, 47);
+}
+
 #index_container {
     display: grid;
     height: 100vh;
     margin: 0;
-    grid-template-columns: 1.8fr 1.2fr;
-    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1.9fr 0.8fr;
+    grid-template-rows: 10% 1fr 12%;
     grid-template-areas: 
     'nav nav'
     'mn as'
-}
-
-#experiences_container {
-    display: grid;
-    height: 100vh;
-    margin: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 0.5fr 2fr 2fr;
-    grid-template-areas: 
-    'nav nav'
-    'dv1 dv2'
-    'art1 art2'
-    'art3 art4'
+    'ft ft'
 }
 
 #projects_container {
     display: grid;
     height: 100vh;
     margin: 0;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 1fr 1fr 1fr;
+    background-color: var(--color1);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr 1fr;
     grid-template-areas: 
-    'nav'
-    'art1'
-    'art2'
-    'art3'
+    'nav nav'
+    'art1 art2'
+    'art3 art4'
+}
+
+#projects_container > article {
+  border-radius: 1rem;
+  background-color: rgba(22, 51, 92, 0.219);
+  margin: 1rem;
+}
+
+#experiences_container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas: 
+    'nav nav nav'
+    'art1 art2 art3'
 }
 
 #about_me_container {
@@ -48,7 +57,7 @@
 
 nav {
     grid-area: nav;
-    background-color: rgb(10, 25, 47);
+    background-color: var(--color1);
 }
 
 main {
@@ -57,10 +66,16 @@ main {
 
 aside {
     grid-area: as;
+    border-left: 2px solid rgba(255, 255, 255, 0.055);
 }
 
 div {
     grid-area: dv;
+}
+
+footer {
+    grid-area: ft;
+    background-color: var(--color1);
 }
 
 .article1 {
@@ -108,7 +123,7 @@ div {
 }
 
 .color1 {
-    background-color: rgb(10, 25, 47);
+    background-color: var(--color1);
 }
 
 .color2 {
@@ -119,33 +134,45 @@ div {
     font-size: 5rem;
     font-weight: 1000;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 6rem;
+    padding-left: 8rem;
     letter-spacing: -0.15rem;
     color: rgb(228, 225, 225);
 }
 
 .font_type2 {
-    padding-left: 7rem;
-    margin-bottom: -3rem;
+    padding-left: 9rem;
+    margin-bottom: -4rem;
     padding-top: 7rem;
     color: pink;
 }
 
 .font_type3 {
-    margin: -2rem 6rem;
-    padding-right: 3rem;
+    margin: -2rem 8.5rem;
+    padding-right: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(156, 156, 156);
+}
+
+.font_type4 {
+  font-size: 2rem;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -0.15rem;
+  color: rgb(228, 225, 225);
+  text-align: center;
+  margin-bottom: -0.5rem;
 }
 
 /*Bar chart css*/
 dl {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 16.5rem;
     position: relative;
     padding: 1rem;
     padding-top: 7rem;
+    font-family: "fira-sans-2", sans-serif;
+    color: rgb(247, 245, 245);
   }
   
   dt {
@@ -154,9 +181,9 @@ dl {
     font-weight: 700;
     display: block;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
-    margin-left: 6.5rem;
+    margin-left: 4.5rem;
     text-transform: uppercase;
   }
   
@@ -168,15 +195,18 @@ dl {
     width: 8rem;
     position: absolute;
     left: 0;
+    margin-left: -2.5rem;
     justify-content: flex-end;
+    font-family: "fira-sans-2", sans-serif;
+    color: rgb(247, 245, 245);
   }
   
   .percentage {
-    font-size: 0.8em;
+    font-size: 0.6rem;
     text-transform: uppercase;
     width: 100%;
     height: 2rem;
-    margin-left: 8rem;
+    margin-left: 5rem;
   }
   .percentage:after {
     content: "";
@@ -212,9 +242,4 @@ dl {
   
   .percentage-100:after {
     width: 100%;
-  }
-  
-  html, body {
-    font-family: "fira-sans-2", sans-serif;
-    color: rgb(247, 245, 245);
   }
