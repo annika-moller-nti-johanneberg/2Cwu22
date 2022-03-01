@@ -48,11 +48,12 @@
     display: grid;
     height: 100vh;
     margin: 0;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 8fr;
+    grid-template-columns: 1.5fr 1.1fr 2fr;
+    grid-template-rows: 10% 45% 45%;
     grid-template-areas: 
-    'nav nav'
-    'as mn'
+    'nav nav nav'
+    'art1 dv mn'
+    'as dv mn'
 }
 
 nav {
@@ -102,10 +103,22 @@ footer {
     grid-area: dv2;
 }
 
+#education_div{
+  display:flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-direction: column;
+}
+
 #logo {
     height: 2rem;
     width: 7rem;
     margin-left: -36rem;
+}
+
+#icon{
+ height: 6rem;
+ width: 6rem;
 }
 
 .nav_li {
@@ -128,6 +141,10 @@ footer {
 
 .color2 {
     background-color: rgb(58, 103, 177);
+}
+
+.color3 {
+  background-color:  rgb(13, 31, 58)
 }
 
 .font_type1 {
@@ -163,6 +180,10 @@ footer {
   margin-bottom: -0.5rem;
 }
 
+.font_type5 {
+  color: white;
+}
+
 /*Bar chart css*/
 dl {
     display: flex;
@@ -170,7 +191,6 @@ dl {
     width: 16.5rem;
     position: relative;
     padding: 1rem;
-    padding-top: 7rem;
     font-family: "fira-sans-2", sans-serif;
     color: rgb(247, 245, 245);
   }
@@ -242,4 +262,8 @@ dl {
   
   .percentage-100:after {
     width: 100%;
+  }
+
+  #chart_container {
+    padding-top: 7rem;
   }
