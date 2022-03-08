@@ -135,16 +135,25 @@ footer {
     margin: 0 2rem;
 }
 
+.about_me_ul {
+  text-align: center;
+  color: white;
+}
+
 .color1 {
     background-color: var(--color1);
 }
 
 .color2 {
-    background-color: rgb(58, 103, 177);
+    background-color: rgb(19, 42, 82);
 }
 
 .color3 {
   background-color:  rgb(13, 31, 58)
+}
+
+.color4 {
+  background-color: rgb(12, 34, 65);
 }
 
 .font_type1 {
@@ -182,6 +191,19 @@ footer {
 
 .font_type5 {
   color: white;
+}
+
+.font_type6 {
+  color: white;
+  padding: 1rem;
+}
+
+.border_bottom {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.055);
+} 
+
+.border_left {
+  border-left: 2px solid rgba(255, 255, 255, 0.055);
 }
 
 /*Bar chart css*/
@@ -266,4 +288,37 @@ dl {
 
   #chart_container {
     padding-top: 7rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    #index_container {
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 50% 30% 10%;
+      grid-template-areas:
+      'nav'
+      'mn'
+      'as'
+      'ft'
+    }
+  
+    #projects_container {
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      'nav'
+      'art1'
+      'art2'
+      'art3'
+      'art4'
+    }
+
+    #experiences_container {
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      'nav'
+      'art1'
+      'art2'
+      'art3'
+  }
   }
