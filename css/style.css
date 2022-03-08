@@ -48,12 +48,25 @@
     display: grid;
     height: 100vh;
     margin: 0;
-    grid-template-columns: 1.5fr 1.1fr 2fr;
+    background-color: var(--color1);
+    grid-template-columns: 1.5fr 2fr 1.1fr;
     grid-template-rows: 10% 45% 45%;
     grid-template-areas: 
     'nav nav nav'
-    'art1 dv mn'
-    'as dv mn'
+    'art1 mn dv'
+    'as mn dv'
+}
+
+#about_me_container > article {
+  border-radius: 1rem;
+  background-color: rgba(22, 51, 92, 0.219);
+  margin: 1rem;
+}
+
+#about_me_container > div {
+  border-radius: 1rem;
+  background-color: rgba(22, 51, 92, 0.219);
+  margin: 1rem;
 }
 
 nav {
@@ -202,9 +215,23 @@ footer {
   border-bottom: 2px solid rgba(255, 255, 255, 0.055);
 } 
 
-.border_left {
-  border-left: 2px solid rgba(255, 255, 255, 0.055);
+.projects_img {
+  height: 80%;
+  width: 30%;
+  padding: 1.2rem 1rem;
 }
+
+.project_container {
+  display: flex;
+  padding-right: 1rem;
+}
+
+.experiences_imgs {
+  height: 40%;
+  width: 70%;
+  margin: 1rem 4rem;
+}
+
 
 /*Bar chart css*/
 dl {
@@ -321,4 +348,18 @@ dl {
       'art2'
       'art3'
   }
+
+    #about_me_container {
+      display: grid;
+      height: 100vh;
+      margin: 0;
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 2fr 1fr 2fr 1fr;
+      grid-template-areas: 
+      'nav'
+      'dv'
+      'as'
+      'mn'
+      'art1'
   }
+}
