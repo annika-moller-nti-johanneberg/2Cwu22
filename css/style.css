@@ -2,16 +2,19 @@
   --color1: rgb(10, 25, 47);
 }
 
+:root {
+  --color2: rgb(25, 110, 32);
+}
+
 #index_container {
     display: grid;
     height: 100vh;
     margin: 0;
     grid-template-columns: 1.9fr 0.8fr;
-    grid-template-rows: 10% 1fr 12%;
+    grid-template-rows: 10% 1fr;
     grid-template-areas: 
     'nav nav'
     'mn as'
-    'ft ft'
 }
 
 #projects_container {
@@ -137,6 +140,7 @@ footer {
 .nav_li {
    display: block;
    color: pink;
+   font-family: 'Source Code Pro', monospace;
    padding: 1rem 3rem;
    margin: 0;
 }
@@ -169,25 +173,31 @@ footer {
   background-color: rgb(12, 34, 65);
 }
 
+.index_text {
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+.index_text_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .font_type1 {
     font-size: 5rem;
     font-weight: 1000;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 8rem;
     letter-spacing: -0.15rem;
     color: rgb(228, 225, 225);
 }
 
 .font_type2 {
-    padding-left: 9rem;
-    margin-bottom: -4rem;
-    padding-top: 7rem;
     color: pink;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .font_type3 {
-    margin: -2rem 8.5rem;
-    padding-right: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(156, 156, 156);
 }
@@ -199,7 +209,6 @@ footer {
   letter-spacing: -0.15rem;
   color: rgb(228, 225, 225);
   text-align: center;
-  margin-bottom: -0.5rem;
 }
 
 .font_type5 {
@@ -222,6 +231,11 @@ footer {
 .border_bottom {
   border-bottom: 2px solid rgba(255, 255, 255, 0.055);
 } 
+
+.border_right_left {
+  border-right: 2px solid rgba(255, 255, 255, 0.055);
+  border-left: 2px solid rgba(255, 255, 255, 0.055);
+}
 
 .projects_img {
   height: 80%;
@@ -322,11 +336,13 @@ dl {
   }
 
   #chart_container {
-    padding-top: 7rem;
+    display: flex;
+    align-items: center;
   }
 
   @media screen and (max-width: 500px) {
     #index_container {
+      height: 160vh;
       grid-template-columns: 100%;
       grid-template-rows: 10% 50% 30% 10%;
       grid-template-areas:
@@ -369,5 +385,8 @@ dl {
       'as'
       'mn'
       'art1'
+  }
+  .font_type1 {
+    font-size: 2.5rem;
   }
 }
