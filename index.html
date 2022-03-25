@@ -7,14 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body id="index_container">
-
     <nav>
+        <div class="hidden">
+            <ul class="menu">
+                <li><a class="menuItem" href="index.html">Home</a></li>
+                <li><a class="menuItem" href="experiences.html">Experiences</a></li>
+                <li><a class="menuItem" href="projects.html">Projects</a></li>
+                <li><a class="menuItem" href="about_me.html">About me</a></li>
+            </ul>
+            <button class="hamburger">
+
+                <img src="img/hamburger.svg" class="menuIcon"></img>
+                <img src="img/close.svg" class="closeIcon"></img>
+            </button>
+        </div>
         <ul class="nav_ul">
             <a href="index.html"><img src="img/logo.png" id="logo"></a>
             <a href="index.html">
@@ -53,8 +62,7 @@
             <dd class="percentage percentage-40"><span class="text">Spanish</span></dd>
         </dl>
     </aside>
-    <footer>
-    </footer>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>

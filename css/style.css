@@ -349,6 +349,59 @@ footer {
   top: 10px;
 }
 
+.menuItem, .menuItem:hover, .hamburger, .closeIcon, .menu, .showMenu {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menuItem {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  font-family: 'Source Code Pro', monospace;
+  color: pink;
+  text-decoration: none;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: white 1px;
+  background: var(--color1);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgb(13, 30, 54);
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+
+.hidden {
+  display: none;
+}
 
 /*Bar chart css*/
 dl {
@@ -439,12 +492,11 @@ dl {
     #index_container {
       height: 160vh;
       grid-template-columns: 100%;
-      grid-template-rows: 10% 50% 30% 10%;
+      grid-template-rows: 10% 50% 40%;
       grid-template-areas:
       'nav'
       'mn'
       'as'
-      'ft'
     }
   
     #projects_container {
@@ -483,5 +535,13 @@ dl {
   }
   .font_type1 {
     font-size: 2.2rem;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .nav_ul {
+    display: none;
   }
 }
