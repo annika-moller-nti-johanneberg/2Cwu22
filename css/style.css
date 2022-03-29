@@ -6,6 +6,10 @@
   --color2: rgb(25, 110, 32);
 }
 
+body {
+  background-color: var(--color1);
+}
+
 #index_container {
     display: grid;
     height: 100vh;
@@ -130,7 +134,7 @@ footer {
 
 #logo {
     width: 7rem;
-    margin-left: -33rem;
+    padding-right: 19rem;
 }
 
 #icon{
@@ -356,7 +360,7 @@ footer {
   top: 10px;
 }
 
-.menuItem, .menuItem:hover, .hamburger, .closeIcon, .menu, .showMenu {
+.menuItem, .menuItem:hover, .hamburger_menu, .closeIcon, .menu, .showMenu {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -371,7 +375,7 @@ footer {
   text-decoration: none;
 }
 
-.hamburger {
+.hamburger_menu {
   position: fixed;
   z-index: 100;
   top: 1rem;
@@ -548,11 +552,15 @@ dl {
     display: block;
   }
 
-  .nav_ul {
+  dl {
+    padding-bottom: 3rem;
+  }
+
+  .menu_categories {
     display: none;
   }
 
-  dl {
-    padding-bottom: 3rem;
+  #logo {
+    padding-right: 10rem;
   }
 }
