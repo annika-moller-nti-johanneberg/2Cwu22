@@ -25,7 +25,6 @@ body {
     display: grid;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     background-color: var(--color1);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 1fr 1fr;
@@ -45,7 +44,6 @@ body {
     display: grid;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 1fr;
     grid-template-areas: 
@@ -161,6 +159,10 @@ footer {
 .about_me_ul {
   text-align: center;
   color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 .color1 {
