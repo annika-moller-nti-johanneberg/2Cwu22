@@ -221,15 +221,18 @@ footer {
 
 .font_type5 {
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .font_type5 a {
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .font_type6 {
   color: white;
   padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .font_type7 {
@@ -277,7 +280,8 @@ footer {
 
 .about_me_img {
   width: 60%;
-  border-radius: 5%
+  border-radius: 5%;
+  filter: grayscale(100%);
 }
 
 .about_me_main {
